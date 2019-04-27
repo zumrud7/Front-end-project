@@ -1,0 +1,165 @@
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+// font-family
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+$font-stack: 'Roboto', sans-serif;
+
+body {
+    font-family: $font-stack;
+
+}
+
+// main colors
+
+$pink-color: #f5576c;
+$text-color: #fff;
+$text-color-light: rgba(255, 255, 255, 0.836);
+$active-color: #00C3CB;
+$yellow-color: #FFBC09;
+$red-color: #f0222c;
+$green-color: #00C382;
+$orange-color: #FD5A38;
+$gray-color: #888888;
+$contact-color: #343a40;
+$text-color-dark: #292b2c;
+$light-green: #B3D369;
+$modal-bg: rgba(65, 64, 64, 0.205);
+$facebook-color: #3b5998;
+$google-color: #d85040;
+
+
+
+// Main solid button css start
+.btn-solid {
+    background-color: $yellow-color;
+    color: $text-color;
+    padding: 4px 12px;
+    border-color: $yellow-color;
+    position: relative; 
+    overflow: hidden;
+
+    &::before {
+        content:'';
+        position: absolute;
+        top: -110px;
+        left: -35px;
+        z-index: 3;
+        height: 250px;
+        width: 25px;
+        transform: skewX(-40deg);
+        background-color: rgba(245, 239, 239, 0.644);
+        
+    }
+
+    &::after {
+        content:'';
+        position: absolute;
+        top: -110px;
+        left: -155px;
+        z-index: 3;
+        height: 250px;
+        width: 15px;
+        transform: skewX(-40deg);
+        background-color: rgba(255, 250, 250, 0.479);
+    }
+
+    &:hover {
+        background-color: #DF9C00;
+        color: $text-color;
+        
+        &::before {
+            overflow: hidden;
+            transform: skewX(-60deg);
+            transform: translate(2500px, 400px);
+            transition: 3s;
+        }
+
+        &::after {
+            overflow: hidden;
+            transform: skewX(-60deg);
+            transform: translate(3000px, 400px);
+            transition: 3s;
+        }
+    }
+
+}
+// Main solid button css end
+
+
+//fb button css start
+.btn-facebook {
+    background-color: $facebook-color;
+    color: $text-color;
+    border-color: $facebook-color;
+    padding: 10px 20px;
+
+    &:hover {
+        background-color: #344e86;
+        border-color: #344e86;
+        color: $text-color;
+    }
+    i {
+        margin-right: 5px;
+    }
+}
+//fb button css end
+
+//google plus button css start
+.btn-google {
+    background-color: $google-color;
+    color: $text-color;
+    border-color: $google-color;
+    padding: 10px 20px;
+
+    &:hover {
+        background-color: #d33d2b;
+        border-color: #d33d2b;
+        color: $text-color;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+}
+//google plus button css end
+
+
+//setting icons for switch color start
+#settings {
+
+    position: fixed;
+    right: -15px;
+    top: 40%;
+    margin: 0;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    color: $text-color;
+
+    .cart {
+        height: 40px;
+        width: 40px;
+        background-color: $light-green;
+        
+    }
+
+    .color-options{
+        height: 40px;
+        width: 40px;
+        background-color: $contact-color;
+        
+    }
+}
+//setting icons for switch color end
+

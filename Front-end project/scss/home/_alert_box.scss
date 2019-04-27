@@ -1,0 +1,45 @@
+#alert {
+    background-color: $pink-color;
+        height: 50px;
+        width: 100%;
+        display: block;
+
+    .alert-text {
+        color: $text-color;
+        
+       
+
+        p {
+            font-weight: bold;
+            line-height: 50px;
+
+            a {
+                color: $text-color;
+                text-decoration: underline;
+              
+                i{
+                    margin-left: 15px;
+                    font-size: 20px;
+                    line-height: 40px;
+                    color: $text-color-light;
+                    
+    
+                    &:hover {
+                        color: $text-color;
+                        cursor: pointer;
+    
+                    }
+                }
+            
+            
+            }
+
+            
+            
+        }
+
+       
+        
+        
+    }
+}

@@ -1,0 +1,115 @@
+#menu-bar {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+
+
+    //navbar css start
+    nav {
+
+        padding-right: 15px!important;
+        ul{
+            li{
+                padding: 15px 0px;
+                margin-right: 10px;
+
+                a{
+                color: $text-color-dark;
+                word-spacing: 5px;
+
+                &:hover {
+                    color: $yellow-color;
+                    transition: 0.4s;  
+                }
+              } 
+
+              // dropdown for gallery option inside "Pages" link start
+              #second-dropdown {
+                  position: absolute;
+                  top: 25%;
+                  left: 190px;
+                
+            }
+
+            // dropdown for gallery option inside "Pages" link end
+
+
+            //dropdown menu style start
+              .dropdown-menu {
+                top:65px;
+                border-radius: 0;
+
+                .dropdown-item {
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+            //dropdown menu style end
+
+               
+        }
+
+    }
+        
+    // search button and search box div css start
+    .search-link {
+
+        i{
+            color: $text-color-dark;
+            font-size: 17px;
+
+            &:hover {
+                color: $yellow-color;
+                transition: 0.4s;
+            }
+        }
+        
+
+    }
+
+    .search-box {
+        position: absolute;
+        height: 80px;
+        width: 270px;
+        right: 15px;
+        background-color: $text-color;
+        bottom: -80px;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        input {
+            position: relative;
+            height: 40px;
+            width: 230px;
+            border-radius: 0;
+            left: 20px;
+            top: 20px;
+            
+
+        }
+        button{
+            position: absolute;
+            border: none;
+            top: 20px;
+            left: 200px;
+            font-size: 20px;
+            color: black;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        
+    }
+
+    // search button and search box div css end
+    }
+    //navbar css end
+
+}
+
