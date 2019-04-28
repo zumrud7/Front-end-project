@@ -24,9 +24,6 @@ $("#modal-registration .modal").on("hide.bs.modal", function () {
 
 
 
-
-
-
 // Menu-bar mouseover/mouseout func start
 var navOption = $("#menu-bar .nav-item")
 var navDropdown = $("#menu-bar .nav-item .dropdown-menu")
@@ -65,8 +62,54 @@ $("#menu-bar .search-link").click(function(){
 
 
 
+// $(window).scroll(function (e) {
+//     if ($("html").scrollTop() >= 100) {
+//         $("#menu-bar .navbar").addClass("scrolled");
+//     } else {
+//         $("#menu-bar .navbar").removeClass("scrolled");
+//     }
+// });
 
 
 
+//Pop Categories section carousel js start
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+
+})
+
+
+//carousel nav button animation show/hide start
+$(".owl-stage-outer").mouseover(function(){
+    console.log("hi")
+    $(".owl-prev").animate({left: '7px'}).css("display", "block")
+    $(".owl-next").animate({right: '7px'}).css("display", "block")
+});
+
+$(".owl-stage-outer").mouseout(function(){
+    console.log("bye")
+    $(".owl-prev").animate({left: '-37px'}).css("display", "none")
+    $(".owl-next").animate({right: '-37px'}).css("display", "none")
+})
+//carousel nav button animation show/hide end
+
+
+
+//Pop Categories section carousel js end
 
 })
