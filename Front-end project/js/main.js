@@ -96,13 +96,15 @@ $('.owl-carousel').owlCarousel({
 
 //carousel nav button animation show/hide start
 $(".owl-stage-outer").mouseover(function(){
-    console.log("hi")
+    $(".owl-prev").stop();
+    $(".owl-next").stop();
     $(".owl-prev").animate({left: '7px'}).css("display", "block")
     $(".owl-next").animate({right: '7px'}).css("display", "block")
 });
 
 $(".owl-stage-outer").mouseout(function(){
-    console.log("bye")
+    $(".owl-prev").stop();
+    $(".owl-next").stop();
     $(".owl-prev").animate({left: '-37px'}).css("display", "none")
     $(".owl-next").animate({right: '-37px'}).css("display", "none")
 })

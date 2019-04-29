@@ -1214,4 +1214,116 @@ main {
 #our-courses button i {
   margin-left: 15px;
 }
+
+#parallax {
+  width: 100%;
+  height: 400px;
+  background-image: url(../image/Banner/counter_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 300px;
+  position: relative;
+  background-attachment: fixed;
+}
+
+#parallax:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(7, 41, 77, 0.7);
+}
+
+#parallax .item {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+#parallax .item img {
+  margin: 25px 0 20px;
+}
+
+#events {
+  padding: 100px 0;
+}
+
+#events .card {
+  width: 370px !important;
+  margin: 20px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #b8b3b3;
+          box-shadow: 0 0 10px #b8b3b3;
+  overflow: hidden;
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#events .card img {
+  width: 100%;
+  height: 100%;
+}
+
+#events .card:hover .card-img-top {
+  overflow: hidden;
+}
+
+#events .card:hover .card-img-top img {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#events .card .card-body {
+  color: #888888;
+}
+
+#events .card .card-body a {
+  text-decoration: none;
+  color: #292b2c;
+  font-size: 14px;
+}
+
+#events .card .card-body a .card-title {
+  font-size: 17px;
+}
+
+#events .card .card-body a:hover {
+  color: #FFBC09;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#events .card .card-body ul {
+  padding: 0;
+  list-style: none;
+}
+
+#events .card .card-body ul li {
+  margin: 10px 10px 0 0;
+  display: inline-block;
+}
+
+#events .card .card-body ul li a {
+  color: #FFBC09;
+}
+
+#events .card .card-body ul li span {
+  color: #FFBC09;
+}
+
+#events .card .card-body p {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
 /*# sourceMappingURL=style.css.map */
