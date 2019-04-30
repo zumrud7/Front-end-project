@@ -2,10 +2,17 @@
     width: 100%;
     font-size: 14px;
     font-weight: bold;
+    background-color: $text-color!important;
 
 
     //navbar css start
     nav {
+
+        background-color: $text-color!important;
+
+        button{
+            color: $text-color-dark;
+        }
 
         padding-right: 15px!important;
         ul{
@@ -75,8 +82,9 @@
         width: 270px;
         right: 15px;
         background-color: $text-color;
-        bottom: -80px;
+        top: 65px;
         display: none;
+        z-index:999;
 
         &.active {
             display: block;

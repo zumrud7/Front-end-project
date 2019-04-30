@@ -1,3 +1,4 @@
+//clear 'X' icon from input box start
 
 /* clears the 'X' from Internet Explorer */
 input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
@@ -9,15 +10,24 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
+//clear 'X' icon from input box end
+
 
 // font-family
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900');
+
 
 $font-stack: 'Roboto', sans-serif;
+$font-section: 'Rubik', sans-serif;
 
-body {
+header {
     font-family: $font-stack;
 
+}
+
+main {
+    font-family: $font-section
 }
 
 // main colors
@@ -29,7 +39,7 @@ $active-color: #00C3CB;
 $yellow-color: #FFBC09;
 $red-color: #f0222c;
 $green-color: #00C382;
-$orange-color: #FD5A38;
+$orange-color: #fd7e14;
 $gray-color: #888888;
 $contact-color: #343a40;
 $text-color-dark: #292b2c;
@@ -37,6 +47,43 @@ $light-green: #B3D369;
 $modal-bg: rgba(65, 64, 64, 0.205);
 $facebook-color: #3b5998;
 $google-color: #d85040;
+$bg-gray: #F7F7F7;
+
+
+
+//Animations start
+
+//button slide fill color start
+@keyframes slide-fill {
+    from {left: 0; top: 0; width: 0;}
+    to {left:0; top:0; width:100%;}
+}
+//button slide fill color end
+
+
+
+// play button animation start
+@keyframes play-animation {
+
+    0% {transform: scale(1, 1); opacity: 1;}
+    10% {transform: scale(1.2, 1.2); opacity: 0.9;}
+    20% {transform: scale(1.3, 1.3); opacity: 0.9;}
+    30% {transform: scale(1.5, 1.5); opacity: 0.9;}
+    40% {transform: scale(1.7, 1.7); opacity: 0.8;}
+    50% {transform: scale(1.8, 1.8); opacity: 0.7;}
+    60% {transform: scale(2, 2); opacity: 0.6;}
+    70% {transform: scale(2.1, 2.1); opacity: 0.5;}
+    80% {transform: scale(2.3, 2.3); opacity: 0.4;}
+    90% {transform: scale(2.4, 2.4); opacity: 0.3;}
+    100% {transform: scale(2.5, 2.5); opacity: 0.2;}
+}
+// play button animation start
+
+
+
+//Animations end
+
+
 
 
 
@@ -97,6 +144,39 @@ $google-color: #d85040;
 // Main solid button css end
 
 
+
+// Main transparent button css start
+.btn-transparent {
+    background-color: transparent;
+    color: $text-color;
+    border: 1px solid $text-color;
+    padding: 4px 12px;
+    position: relative; 
+    overflow: hidden;
+
+    
+     &:hover {
+         color: $yellow-color;
+         
+         &::after {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index:-1;
+            background-color: $text-color;
+            overflow: hidden;
+            animation-name: slide-fill;
+            animation-duration: 0.8s;
+         }
+     }
+}
+// Main transparent button css end
+
+
+
 //fb button css start
 .btn-facebook {
     background-color: $facebook-color;
@@ -114,6 +194,8 @@ $google-color: #d85040;
     }
 }
 //fb button css end
+
+
 
 //google plus button css start
 .btn-google {
@@ -135,6 +217,7 @@ $google-color: #d85040;
 //google plus button css end
 
 
+
 //setting icons for switch color start
 #settings {
 
@@ -146,6 +229,7 @@ $google-color: #d85040;
     line-height: 40px;
     text-align: center;
     color: $text-color;
+    z-index: 999;
 
     .cart {
         height: 40px;
@@ -163,3 +247,22 @@ $google-color: #d85040;
 }
 //setting icons for switch color end
 
+
+//page introduction css start
+.page-intro {
+    text-align: center;
+    color: $text-color-dark;
+    
+
+    h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 15px;
+        color: $gray-color;
+        margin-bottom: 50px;
+    }
+}
+//page introduction css start

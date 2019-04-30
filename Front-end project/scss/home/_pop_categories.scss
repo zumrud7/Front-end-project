@@ -1,0 +1,104 @@
+#pop-categories {
+    padding: 100px 0px;
+
+    .owl-carousel {
+        
+        a{
+
+                text-decoration: none;
+                color: $text-color;
+            
+            .item {
+                text-align: center;
+                height: 120px;
+                padding: 25px 20px;
+                margin: 0 7px;
+                border-radius: 10px;
+                
+            
+                i {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                
+
+                // Background color applied separately start
+                &.business {
+                    background-color: $light-green;
+                }
+                &.development {
+                    background-color: $orange-color;
+                }
+                &.health{
+                    background-color: $active-color;
+                }
+                &.language {
+                    background-color: $pink-color;
+                }
+                &.academics {
+                    background-color: $yellow-color;
+                }
+                &.photography {
+                    background-color: #e83e8c;
+                }
+                // Background color applied separately end
+    
+        }
+    }
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $text-color-dark;
+  background-color: $text-color;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.747);
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.owl-prev {
+left: -26px;
+}
+
+.owl-next {
+right: -26px;
+}
+      
+
+
+// @keyframes move-prev-btn {
+//     from {left: -35px;}
+//     to {left: 5px;}
+// }
+
+// @keyframes move-next-btn {
+//     from {right: -35px;}
+//     to {right: 5px;}
+// }
+
+// &:hover {
+//     .owl-prev,
+//     .owl-next {
+//         // opacity: 1!important;
+//         // animation-name: move-prev-btn;
+//         // animation-duration: 1s;
+//     }
+
+//     .owl-next {
+//         animation-name: move-next-btn;
+//         animation-duration: 1s;
+//         opacity: 1!important;
+//     }
+// }
+}
+
+
+
+
+}

@@ -1,0 +1,107 @@
+#about-us {
+
+    .content {
+        padding: 50px;
+        border-radius: 0 1000px 1000px 0;
+        border: none;
+        left: -50px;
+        background-color: $text-color;
+        box-shadow: 0 0 10px rgb(172, 170, 170);
+        width: 720px;
+        margin-top: 20px;
+        height: 410px;
+
+        p{
+            color: $gray-color;
+            margin: 20px 0px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li{
+            display: inline-block;
+            padding: 0;
+            margin-right: 25px;
+
+            &:nth-child(1) {
+                color: $pink-color;
+            }
+            &:nth-child(2) {
+                color: $light-green;
+            }
+            p{
+                font-weight: bold;
+                color: black;
+            }
+
+            }
+        }
+    }
+    
+    
+    
+    .vd-photo {
+        width: 674px;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        z-index: -10;
+
+
+        &:before {
+            content:'';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(46, 45, 45, 0.411);
+
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    
+    }
+
+        a{
+            
+
+        
+        i {
+            position: absolute;
+            z-index: 5;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            text-align: center;
+            border-radius: 100%;
+            background-color: $text-color;
+            color: $yellow-color;
+            top: 45%;
+            left: 47%;
+
+            &:after {
+                content:'';
+                position: absolute;
+                border: 10px solid rgba(243, 237, 237, 0.411);
+                top: 7px;
+                left: 8px;
+                border-radius: 100%;
+                height: 40px;
+                width: 40px;
+                animation-name: play-animation;
+                animation-iteration-count: infinite;
+                animation-duration: 1s;
+            }
+
+           
+        }
+
+    }
+    
+}
+
