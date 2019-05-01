@@ -1,0 +1,123 @@
+#gallery {
+ padding: 100px 0;
+
+ ul {
+     list-style: none;
+     padding: 0;
+ 
+    
+        a {
+            color: $text-color-dark;
+            text-decoration: none;
+
+            li {
+
+                padding: 0;
+                display: inline-block;
+                color: $text-color-dark;
+                background-color: #eee;
+                border-radius: 5px;
+                padding: 7px 20px;
+        
+
+                &:hover {
+                    background-color: $yellow-color;
+                    color: $text-color;
+                    transition: 0.7s;
+                }
+            }
+
+
+            &.active {
+
+                li{
+                    background-color: $yellow-color;
+                    color: $text-color;
+                }
+                
+                
+            }
+        }
+
+        
+ 
+    }
+
+    .photo {
+        padding: 0;
+        margin-bottom: 10px;
+        width: 360px;
+        height: 220px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        // display: none;
+
+        
+
+        a{
+
+            text-decoration: none;
+            color: $text-color;
+            text-align: center;
+
+            .title-btn {
+                width: 200px;
+                height: 100px;
+                position: absolute;
+                left: 85px;
+                top: 250px;
+
+                i{
+                    top: 0;
+                    left: 80px;
+                }
+
+                h5{
+                    position: absolute;
+                    left: 48px;
+                    top: 72px;
+                }
+
+                
+            }
+
+
+
+            // i {
+            //     left: 155px;
+            // }
+
+            // h5 {
+            //     position: absolute;
+            //     left:124px;
+            // }
+
+
+            // i, h5{
+            //     top: 250px;
+            // }
+        }
+
+        &:hover {
+
+            &:before {
+                content:'';
+                position: absolute;
+                top: 0;
+                left:0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0,0,0,0.60);
+               
+            }
+
+        //     i, h5 {
+        //         display: block;
+        //     }
+        // }
+        
+    }
+}
+
+}

@@ -1,0 +1,48 @@
+#coaching-training {
+    background-color: $yellow-color;
+    width: 100%;
+    padding: 50px;
+    color: $text-color;
+
+    h2 {
+        font-size: 37px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    button {
+
+        padding: 10px 25px;
+
+        .btn-transparent {
+            background-color: transparent;
+            color: $text-color;
+            border: 1px solid $text-color;
+            padding: 4px 12px;
+            position: relative; 
+            overflow: hidden;
+        
+            
+             &:hover {
+                 color: $yellow-color;
+                 
+                 &::after {
+                    content:'';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    z-index:-1;
+                    background-color: $text-color;
+                    overflow: hidden;
+                    animation-name: slide-fill;
+                    animation-duration: 0.8s;
+                 }
+             }
+        }
+    }
+}

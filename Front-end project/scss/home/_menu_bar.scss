@@ -3,6 +3,15 @@
     font-size: 14px;
     font-weight: bold;
     background-color: $text-color!important;
+    z-index: 1000;
+
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
 
 
     //navbar css start
@@ -85,6 +94,7 @@
         top: 65px;
         display: none;
         z-index:999;
+        border: 1px solid #ced4da;
 
         &.active {
             display: block;
@@ -106,7 +116,7 @@
             top: 20px;
             left: 200px;
             font-size: 20px;
-            color: black;
+            color: $gray-color;
 
             &:hover {
                 background-color: transparent;

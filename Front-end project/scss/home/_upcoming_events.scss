@@ -3,13 +3,13 @@
 
     .card {
 
-            width: 370px!important;
-            margin: 20px 30px;
+            width: 350px!important;
             border-radius: 10px;
             box-shadow: 0 0 10px rgb(184, 179, 179);
             overflow: hidden;
             padding-bottom: 0;
             box-sizing: border-box;
+            position: relative;
 
             img {
                 width: 100%;
@@ -56,6 +56,10 @@
                 li {
                     margin: 10px 10px 0 0;
                     display: inline-block;
+
+                    i {
+                        margin-right: 4px;
+                    }
                     
                     a{
                         color: $yellow-color;
@@ -72,5 +76,49 @@
             }
         }
 
+    .date {
+        width: 75px;
+        height: 115px;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        overflow: hidden;
+        text-align: center;
+
+        .day {
+            background-color: $text-color;
+            height:60px;
+            width: 100%;
+            padding: 10px;
+
+            h5 {
+                margin-bottom: 2px;
+                font-size: 22px;
+
+            }
+
+            h6{
+                margin-bottom: 0;
+                font-size: 13px;
+            }
+
+
+        }
+
+        .time {
+            padding: 7px 7px 10px;
+            background-color: $yellow-color;
+
+            p{
+                margin-bottom: 0;
+                font-size: 14px;
+                color: $text-color;
+            }
+        }
+    }
+
+  
+    
     }
 }

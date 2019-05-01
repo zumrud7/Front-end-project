@@ -1,0 +1,50 @@
+#student-say {
+    padding: 100px 0;
+
+    .owl-carousel {
+
+        .item {
+            width: 480px;
+            height: 220px;
+            margin: 0 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgb(184, 179, 179);
+            padding: 25px;
+            padding-left: 80px;
+            position: relative;
+            cursor: pointer;
+            
+        
+            h6{
+                font-size: 15px;
+                margin-bottom: 8px;
+            }
+
+            span{
+                font-size: 16px;
+                color: $yellow-color;
+                font-style: italic;
+            }
+
+            p{
+                font-size: 15px;
+                color: $gray-color;
+                margin: 5px 0;
+            }
+
+            img {
+                position: absolute;
+                width: 100px;
+                height:100px;
+                top: 25px;
+                left: -50px;
+                border-radius: 10px;
+            }
+        
+        }
+
+        .owl-stage {
+            margin: 10px;
+        }
+    }
+}
