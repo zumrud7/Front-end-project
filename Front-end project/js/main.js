@@ -24,7 +24,6 @@ $(document).ready(function () {
         for (let i = 0; i < colorBtn.length; i++) {
             $(colorBtn[i]).click(function (ev) {
 
-                console.log($(colorBtn[i]).css("backgroundColor"))
                 if (!$(colorBtn[i]).hasClass("active")) {
                     $(colorBtn).removeClass("active");
                     $(colorBtn[i]).addClass("active");
@@ -115,18 +114,6 @@ $(document).ready(function () {
     // Menu bar search button toggle end //
 
 
-
-    // $(window).scroll(function (e) {
-    //     if ($("html").scrollTop() >= 100) {
-    //         $("#menu-bar .navbar").addClass("scrolled");
-    //     } else {
-    //         $("#menu-bar .navbar").removeClass("scrolled");
-    //     }
-    // });
-
-
- 
-
     //Pop Categories section carousel js start
     $("#pop-categories .owl-carousel").owlCarousel({
         loop: true,
@@ -188,53 +175,7 @@ $(document).ready(function () {
 
     //gallery mouseover function for icon display end
 
-    var options = $("#gallery ul a")
-
-    for (let i = 0; i < options.length; i++) {
-
-
-        for (let i = 0; i < photo.length; i++) {
-
-
-            // console.log($(photo[i]))
-
-            $(options[i]).mouseover(function () {
-
-                // console.log($(images[i]).attr("data-target", "library"))
-
-
-
-
-                if ($(options[i]).index() == 0 && $(options[i]).hasClass("active")) {
-                    // $(images).show();
-                    // $(images).hide();
-
-                    // console.log("hello")
-                    $(photo[i]).toggleClass("active")
-                }
-
-                else if ($(options[i]).index() == 1) {
-                    $(photo[i]).css("display", "block")
-
-                }
-
-                else if ($(options[i]).index() == 2) {
-                    // console.log("shalom")
-                    $(photo[i]).css("display", "block")
-                }
-
-                else {
-                    // console.log("que")
-                    $(photo[i]).css("display", "block")
-                }
-
-            })
-
-        }
-
-
-    }
-
+   
 
     // our teachers hover js start
 
@@ -316,5 +257,94 @@ $(document).ready(function () {
     })
 // our client icon animation end
 
+
+// gallery button active function start
+var catItem = $("#gallery .category-item")
+for (let i = 0; i < catItem.length; i++) {
+
+    $(catItem[i]).click(function () {
+        if (!$(catItem[i]).hasClass("active")) {
+            $(catItem).removeClass("active");
+            $(catItem[i]).addClass("active");
+        }
+        
+    })
+}
+// gallery button active function end
+
+// gallery filter photos function START
+$(catItem).click(function(){
+
+   
+    var category = $(this).attr("id");
+    // alert(category)
+
+    if(category == "all"){
+
+        
+         $("#gallery .photo").addClass("hide");
+         setTimeout(function(){
+
+            $(".photo").removeClass("hide")
+         }, 200)
+    }
+    else {
+        $("#gallery .photo").addClass("hide");
+        setTimeout(function(){
+
+            $("." + category).removeClass("hide")
+        }, 200)
+        
+    }
+
+    
+
+    
+})
+// gallery filter photos function END
+
+
+
+// our-courses page pagination change function start
+var myPages = $("#our-courses .page li")
+
+for (let i = 0; i < myPages.length; i++) {
+    $(myPages[i]).click(function(ev){
+
+        
+        if($(myPages[i]).hasClass("disabled")){
+            $(this).removeClass("active")
+        }
+        else {
+
+            $(myPages).removeClass("active")
+            $(myPages[i]).addClass("active")
+        }
+
+    })
+}
+// our-courses page pagination change function end  
+
+
+// events pagination change function start
+var myPagination = $("#events .page li")
+
+for (let i = 0; i < myPagination.length; i++) {
+    $(myPagination[i]).click(function(ev){
+
+        
+        if($(myPagination[i]).hasClass("disabled")){
+            $(this).removeClass("active")
+        }
+        else {
+
+            $(myPagination).removeClass("active")
+            $(myPagination[i]).addClass("active")
+        }
+
+    })
+}
+
+// events pagination change function end
 
 })
