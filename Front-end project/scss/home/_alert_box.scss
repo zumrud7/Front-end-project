@@ -12,15 +12,21 @@
         p {
             font-weight: bold;
             line-height: 50px;
+            text-align: center;
 
-            a {
-                color: $text-color;
+            
+            span{
                 text-decoration: underline;
+                cursor: pointer;
+            }
+
+       
+        }
               
                 i{
-                    margin-left: 15px;
+                    margin-left: 10px;
                     font-size: 20px;
-                    line-height: 40px;
+                    line-height: 35px;
                     color: $text-color-light;
                     
     
@@ -31,15 +37,17 @@
                     }
                 }
             
-            
-            }
+     
 
             
             
-        }
-
-       
-        
-        
     }
+
+    // span {
+    //     text-decoration: underline;
+    //     cursor: pointer;
+    // }
+        
+        
+    
 }

@@ -155,7 +155,48 @@
                  margin-left: 15px;
              }
          }
-            
-        }
+          
+        .page {
+
+            ul {
+
+                padding: 0;
+                list-style: none;
+
+                li{
+                    display: inline-block;
+                    color: $gray-color;
+                    border: 2px solid rgb(197, 196, 196);
+                    height: 40px;
+                    width: 40px;
+                    margin: 2px;
+                    line-height: 40px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $yellow-color;
+                        color: $text-color;
+                        border: 2px solid $yellow-color;
+                        transition: 0.4s;
+
+                        &.disabled {
+                            color: $gray-color;
+                            border: 2px solid rgb(197, 196, 196);
+                            background-color: $text-color;
+                            cursor: auto;
+                        }
+                    }
+
+                    &.active {
+                        background-color: $yellow-color;
+                        border: 2px solid $yellow-color;
+                        color: $text-color;
+                    }
+                }
+            }
+        }         
+
+}
     
  
