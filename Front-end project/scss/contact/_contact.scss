@@ -1,0 +1,130 @@
+#contact {
+    padding: 100px 0;
+
+    .form-location{
+        margin: 40px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(184, 179, 179);
+        width: 100%;
+        overflow: hidden;
+
+       .form {
+           padding: 30px 50px;
+       
+       
+        form {
+
+            input {
+                padding: 20px;
+                margin: 8px;
+            }
+
+            textarea {
+                margin: 8px;
+            }
+
+            .alert {
+                padding: 0;
+                margin: 0;
+                height: 24px;
+                text-align: center;
+                background-color: #efa0a0;
+                color: #721c24;
+                display: none;
+            }
+
+            button {
+                padding: 10px 30px;
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+    .location {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    }
+
+    
+}
+
+
+#ctc-information {
+
+    padding-bottom: 100px;
+
+    .ctc {
+        border-radius: 10px;
+        color: $text-color;
+        padding: 30px;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            
+        }
+
+        &#ctc1 {
+            background-image: url(../image/Contact/address_img.jpg);
+            
+            &:before {
+                background-color: rgba(245, 87, 108, 0.90);
+            }
+        }
+
+        &#ctc2 {
+            background-image: url(../image/Contact/call_img.jpg);
+
+            &:before {
+                background-color: rgba(179, 211, 105, 0.90);
+            }
+        }
+
+        &#ctc3 {
+            background-image: url(../image/Contact/email_img.jpg);
+
+            &:before {
+                background-color: rgba(255, 188, 9, 0.90);
+            }
+        }
+
+
+        .icon {
+            height: 150px;
+            width: 290px;
+            margin: 0 auto;
+            position: absolute;
+
+
+            img{
+                width: 55px;
+                height: 55px;
+            }
+        }
+
+        h4{
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
+    }
+}

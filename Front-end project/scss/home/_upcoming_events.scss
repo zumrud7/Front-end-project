@@ -164,3 +164,324 @@
     }    
 }
 
+#event-detail {
+    padding: 100px 0;
+    font-family: $font-stack;
+
+    .card {
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        overflow: hidden;
+    
+    .card-img-top {
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .date {
+            width: 75px;
+            height: 115px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            overflow: hidden;
+            text-align: center;
+    
+            .day {
+                background-color: $text-color;
+                height:60px;
+                width: 100%;
+                padding: 10px;
+    
+                h5 {
+                    margin-bottom: 2px;
+                    font-size: 22px;
+    
+                }
+    
+                h6{
+                    margin-bottom: 0;
+                    font-size: 13px;
+                }
+    
+    
+            }
+    
+            .time {
+                padding: 7px 7px 10px;
+                background-color: $yellow-color;
+    
+                p{
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    color: $text-color;
+                }
+            }
+        }
+
+    }
+
+        .card-body {
+            padding: 20px 0 0;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-left: 10px;
+            }
+
+            ul {
+                display: inline-block;
+                list-style: none;
+                padding: 0;
+                margin-top: 10px;
+
+                li {
+                    display: inline-block;
+                    margin-left: 10px;
+                    color: $gray-color;
+
+
+                    a {
+                        text-decoration: none;
+                        color: $yellow-color;
+                    }
+
+                    span {
+                        color: $yellow-color;
+                    }
+
+                    i{
+                        margin-right: 5px;
+                    }
+                }
+
+                &.logos {
+                    margin-left: 370px;
+
+                    li {
+                    color: $text-color-dark;
+                    
+                    
+                    &:hover { 
+                        cursor: pointer;
+                        color: $yellow-color;
+                        transition: 0.5s;
+                    }
+
+                }
+                }
+                
+            }
+        }
+
+        .footer {
+            border-top: 1px solid #ddd;
+            padding: 20px 0;
+
+            p{
+                color: $gray-color;
+            }
+        }
+
+    }
+
+    .comment {
+
+        margin: 40px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(184, 179, 179);
+        padding: 30px;
+        width: 97%;
+
+        form {
+
+            h1 {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+
+            textarea {
+                width: 100%;
+            }
+
+            .alert {
+                padding: 0;
+                margin: 0;
+                height: 24px;
+                text-align: center;
+                background-color: #efa0a0;
+                color: #721c24;
+                display: none;
+            }
+
+            button {
+                padding: 10px 30px;
+            }
+        }
+    }
+
+    
+
+    .join-now {
+        height: 150px;
+        width: 100%;
+        background-color: $yellow-color;
+        color: $text-color;
+        text-align: center;
+        padding: 15px;
+
+        ul{
+            margin: 0;
+
+            li {
+                display: inline-block;
+                font-size: 12px;
+                margin: 5px 5px 20px;
+    
+                p{
+                    margin: 0;
+
+                    &:first-child{
+                        font-size: 25px;
+                    }
+                }
+                span {
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+            }
+        }
+        
+
+        button {
+            
+        padding: 5px 15px;
+        }
+    }
+
+    h4{
+        margin: 30px 0 15px;
+        position: relative;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            border-bottom: 3px solid $yellow-color;
+            width: 100px;
+            left: 0;
+            top: 42px;
+
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li{
+
+            .item {
+                position: relative;
+                margin-bottom: 15px;
+    
+                .link {
+                    width: 190px;
+                    position: absolute;
+                    top: 0;
+                    left: 60px;
+                    padding: 0 10px;
+    
+                    p{
+                        margin-bottom: 0;
+                        font-size: 13px;
+    
+                        &:first-child {
+                            font-size: 13px;
+                            margin-bottom: 5px;
+                        }
+    
+                        &:last-child {
+                            color: $green-color;
+                        }
+                    }
+
+                    
+                }
+            }
+            a {
+                text-decoration: none;
+                color: $text-color-dark;
+
+                &:hover {
+                    color: $yellow-color;
+                    transition: 0.4s;
+                }
+            }
+        
+        }
+    }
+
+    .course-categories {
+        
+        margin-top: 20px;
+            p{
+                display: inline-block;
+            }
+    
+
+            .title {
+
+                display: inline-block;
+                width: 150px;
+                margin-right: 70px;
+
+                i {
+                    margin-right: 7px;
+                }
+            }
+       
+
+        // a{
+        //     margin-right: 50px;
+        // }
+    }
+
+    .recent-posts {
+        p{
+            &:first-child {
+                font-size: 14px!important;
+                margin-bottom: 4px;
+            }
+
+            &:last-child {
+                font-size: 12px;
+                color: $gray-color!important;
+            }
+        }
+    }
+
+    .tags {
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            color: $text-color-dark;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            padding: 5px 15px;
+            margin-right: 5px;
+
+            &:hover {
+                background-color: $yellow-color;
+                color: $text-color;
+                transition: 0.5s;
+                border: 1px solid $yellow-color;
+            }
+
+        }
+    }
+    
+}

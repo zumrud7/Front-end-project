@@ -1,6 +1,7 @@
 #gallery {
  padding: 100px 0;
 
+ //button css start
  ul {
      list-style: none;
      padding: 0;
@@ -31,7 +32,9 @@
 
  
     }
+//button css end
 
+// gallery photo css start
     .photo-container {
         width: 1100px;
         display: inline-block;
@@ -110,26 +113,10 @@
                
             }
 
-            // &.title-btn {
-
-            //     animation-name: button-slide-up;
-            //     animation-duration: 1s;
-                
-            //     // transition: transform 0.5s ease-in;
-            //     // transform: translateY(-170px);
-            // }
-
         }
         
     }
 }
+// gallery photo css end
 
 }
-
-// @keyframes button-slide-up {
-
-//     from{transform: translateY(0px);}
-//     to {transform: translateY(-170px);}
-//     // from {transform: translateY(250px)}
-//     // to {transform: translateY(-170px)}
-// }
